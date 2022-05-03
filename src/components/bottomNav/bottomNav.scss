@@ -1,0 +1,42 @@
+@import '@/assets/style/var.scss';
+
+.bottomNav{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  width:100%;
+  position: fixed;
+  bottom:0px;
+  background:#fff;
+  height:65px;
+  gap:5px;
+  border-top:1px solid #e2e2e2;
+  z-index:10;
+
+  .btn{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:60px;
+    height:55px;
+    border-radius:5px;
+    .v-icon{
+      display:flex;
+      font-size:20px;
+    }
+    label{
+      font-size:10px;
+      margin-top:2px;
+    }
+  }
+  .btn.active{
+    background:#eeeef8;
+    .v-icon{
+      color:$blue
+    }
+    label{
+      color:$blue
+    }
+  }
+}

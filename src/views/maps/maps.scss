@@ -1,0 +1,106 @@
+@import '@/assets/style/var.scss';
+
+.maps{
+  position: relative;
+  height:100vh;
+  background:#f2f2f2;
+}
+
+.header{
+  position: absolute;
+}
+
+.map-top-btns{
+  position: absolute;
+  top:90px;
+  left:0px;
+  width:100%;
+  display:flex;
+  overflow-x:auto;
+  padding:0 20px;
+  padding-bottom:20px;
+  gap:10px;
+  z-index:10;
+
+  &::-webkit-scrollbar{
+    display:none;
+  }
+
+  .v-btn{
+    background:#fff;
+    max-height:28px;
+    width:unset;
+    border-radius:13px;
+    font-size:12px;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+    padding:0 10px;
+    border:1px solid #c2c2c2;
+
+    label{
+      font-size:11px;
+      margin-right:4px;
+    }
+    span{
+      font-size:14px;
+      font-weight:bold;
+      color:$blue
+    }
+  }
+  .v-btn.active{
+    background-color:$blue;
+    label{color:#fff}
+    span{color:#fff}
+  }
+}
+
+.order-area{
+  position: absolute;
+  bottom:65px;
+  left:0px;
+  width:100%;
+  padding:20px;
+  z-index:11;
+
+  .orderCard{
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.1);
+  }
+}
+
+.map-bottom-btns{
+  display:flex;
+  align-items: flex-end;
+  position: absolute;
+  right:20px;
+  bottom:85px;
+  z-index:10;
+
+  .left{
+    flex:1;
+    display:flex;
+    align-items: center;
+    margin-right:20px;
+    .v-btn{
+      background:#fff;
+      max-height:28px;
+      width:unset;
+      border-radius:13px;
+      font-size:12px;
+      box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+      padding:0px 10px;
+      border:1px solid #292929;
+    }
+  }
+
+  .right{
+    display:flex;
+    flex-direction: column;
+    gap: 10px;
+    .v-btn{
+      width:40px;
+      height:40px;
+      border:2px solid #292929;
+      background:#fff;
+      box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+    }
+  } 
+}

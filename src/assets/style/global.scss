@@ -1,0 +1,63 @@
+@import './reset.scss';
+@import './var.scss';
+
+#app{
+  font-size:14px;
+  letter-spacing: -0.4px;
+  line-height:1.3;
+  color:#292929;
+
+  .v-dialog{
+    border-radius:10px;
+  }
+
+  .v-btn{
+    letter-spacing: -0.4px;
+  }
+
+
+  .theme--light.v-btn--active:hover::before, .theme--light.v-btn--active::before{
+    opacity:0;
+  }
+  .theme--light.v-btn:hover::before{
+    opacity:0;
+  }
+}
+
+.divider{
+  background:#f2f2f2;
+}
+
+.modal{
+  padding:20px;
+  background:#fff;
+
+  .top{
+    h3{
+      font-size:16px;
+      font-weight:bold;
+    }
+  }
+
+  .middle{
+    margin:10px 0 20px 0;
+  }
+
+  .bottom{
+    display:flex;
+    justify-content: flex-end;
+
+    .v-btn{
+      height:36px;
+      margin-left:10px;
+    }
+    .v-btn.ok{
+      background:#292929;
+      color:#fff;
+    }
+    .v-btn.cancle{
+      border:1px solid #292929;
+    }
+  }
+}
+

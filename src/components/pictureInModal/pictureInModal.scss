@@ -1,0 +1,45 @@
+.pictureIn{
+  .pictureBtn{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    border:1px solid #c2c2c2;
+    padding:10px;
+    border-radius:5px;
+    margin-bottom:10px;
+
+    .left{
+      span{
+        margin-left:5px;
+      }
+    }
+  }
+  
+  .photos{
+   
+    .no-photo{
+      display:flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding:20px;
+      width:100%;
+      height:200px;
+      background:#f2f2f2;
+      border-radius:5px;
+      margin-bottom:20px;
+      .v-icon{
+        margin-bottom:10px;
+        color:#aaa;
+      }
+    }
+
+    img{
+      width:100%;
+      height:300px;
+      object-fit: cover;
+      border-radius:5px;
+      display:block;
+    }
+  }
+}

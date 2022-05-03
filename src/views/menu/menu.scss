@@ -1,0 +1,54 @@
+.menu_wrap{
+  padding:20px;
+  min-height:100vh;
+  .user-info{
+    display:flex;
+    flex-direction: column;
+    gap:10px;
+    background:#f2f2f2;
+    padding:15px;
+    border-radius:5px;
+    margin-bottom:40px;
+    
+    dl{
+      display:flex;
+      align-items: center;
+      
+      dt{
+        width:60px;
+      }
+      dd{
+        font-weight:bold;
+      }
+    }
+  }
+
+  .menu{
+
+    h4{
+      font-size:16px;
+      font-weight:bold;
+      margin-bottom:15px;
+    }
+
+    .btns{
+      display:flex;
+      flex-direction: column;
+      gap:10px;
+      .btn{
+        display:flex;
+        align-items: center;
+        min-height:50px;
+        border:1px solid #c2c2c2;
+        border-radius:5px;
+  
+
+        .v-icon{
+          width:40px;
+          font-size:20px;
+        }
+      }
+    }
+    
+  }
+}

@@ -1,0 +1,27 @@
+.v-dialog--active{
+  border-radius:10px;
+}
+
+.imageViewer{
+  position: relative;
+  width:100%;
+  
+  img{
+    display:block;
+    object-fit: contain;
+    width:100%;
+  }
+
+  
+
+  .v-btn{
+    background:rgba(0,0,0,0.8);
+    position: absolute;
+    right:10px;
+    top:10px;
+
+    .v-icon{
+      color:#fff;
+    }
+  }
+}

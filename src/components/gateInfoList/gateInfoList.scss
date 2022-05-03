@@ -1,0 +1,32 @@
+.gateInfo{
+  .list{
+    display:flex;
+    flex-direction: column;
+    gap:5px;
+    height:400px;
+    overflow-y:auto;
+
+    .gateItem{
+      display:flex;
+      flex-direction: column;
+      gap:5px;
+      background:#f8f8f8;
+      border-radius:5px;
+      padding:10px;
+
+      dl{
+        display:flex;
+        align-items: center;
+        dt{
+          font-size:12px;
+          width:70px;
+          color:#898989;
+        }
+        dd{
+          font-size:13px;
+        }
+      }
+    }
+    
+  }
+}
