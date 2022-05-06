@@ -36,7 +36,18 @@ const routes: Array<RouteConfig> = [
     path:'/orderDetail',
     name:'orderDetail',
     component:() => import('@/views/orderDetail/orderDetail.vue')
+  },
+  {
+    path:'/login',
+    name:'login',
+    component:() => import('@/views/login/login.vue')
+  },
+  {
+    path:'/searchResult',
+    name:'searchResult',
+    component:() => import('@/views/searchResult/searchResult.vue')
   }
+  
 ]
 
 const router = new VueRouter({

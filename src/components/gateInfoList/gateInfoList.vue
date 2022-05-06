@@ -20,7 +20,7 @@
               
       </div>  
       <div class="bottom">
-        <v-btn class="ok" @click="visible = false">확인</v-btn>
+        <v-btn text class="ok" @click="visible = false">확인</v-btn>
       </div>  
     </div>
   </v-dialog>

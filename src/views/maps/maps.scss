@@ -4,10 +4,12 @@
   position: relative;
   height:100vh;
   background:#f2f2f2;
+  overflow:hidden
 }
 
 .header{
   position: absolute;
+  background:unset;
 }
 
 .map-top-btns{
@@ -32,7 +34,7 @@
     width:unset;
     border-radius:13px;
     font-size:12px;
-    box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+    box-shadow: 3px 3px 9px rgba(0,0,0,0.15), 1px 1px 3px rgba(0,0,0,0.05);
     padding:0 10px;
     border:1px solid #c2c2c2;
 
@@ -55,14 +57,35 @@
 
 .order-area{
   position: absolute;
-  bottom:65px;
+  background:#fff;
+  border-radius:20px 20px 0 0;
+  bottom:0px;
   left:0px;
   width:100%;
-  padding:20px;
-  z-index:11;
+  z-index:10;
+  top:55%;
 
-  .orderCard{
-    box-shadow: 3px 3px 10px rgba(0,0,0,0.1);
+  .top{
+    height:40px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+    span{
+      height:5px;
+      width:60px;
+      background:#e2e2e2;
+      border-radius:2.5px;
+    }
+  }
+
+  .list{
+    display:flex;
+    flex-direction: column;
+    padding:0 20px 125px 20px;
+    gap:15px;
+    height:100%;
+    overflow-y: auto;
   }
 }
 
@@ -72,7 +95,7 @@
   position: absolute;
   right:20px;
   bottom:85px;
-  z-index:10;
+  z-index:9;
 
   .left{
     flex:1;
@@ -85,7 +108,7 @@
       width:unset;
       border-radius:13px;
       font-size:12px;
-      box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+      box-shadow: 3px 3px 9px rgba(0,0,0,0.15), 1px 1px 3px rgba(0,0,0,0.05);;
       padding:0px 10px;
       border:1px solid #292929;
     }
@@ -98,9 +121,12 @@
     .v-btn{
       width:40px;
       height:40px;
-      border:2px solid #292929;
+      border:1px solid #292929;
       background:#fff;
-      box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+      box-shadow: 3px 3px 9px rgba(0,0,0,0.15), 1px 1px 3px rgba(0,0,0,0.05);;
+      .v-icon{
+        color:$blue;
+      }
     }
   } 
 }

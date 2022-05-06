@@ -5,9 +5,12 @@
         <img src="@/assets/img/logo.png" alt="데일리세탁">
         <span>Rider</span>
       </div>
-      <input type="text" placeholder="주문번호 검색" id="searchInput">
-      <v-btn icon class="close">
+      <input type="text" placeholder="주문번호 검색" id="searchInput" @keyup.enter="$router.push('searchResult')">
+      <v-btn icon class="btn close">
         <v-icon>mdi-close-circle</v-icon>
+      </v-btn>
+      <v-btn icon class="btn search">
+        <v-icon>mdi-magnify</v-icon>
       </v-btn>
     </div>
   </div>

@@ -3,9 +3,9 @@
     <div class="progress">
       <v-progress-circular
         indeterminate
-        size="36"
+        size="24"
         width="3"
-        color="#0007EE"
+        color="#fff"
       />
     </div>
   </div>

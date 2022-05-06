@@ -15,7 +15,7 @@
     </div>
     <div class="middle">
       <div class="left">
-        <div class="row">
+        <div class="user">
           <span class="name">박수민</span>
           <span class="phone">010-8525-4561</span>
         </div>
@@ -36,9 +36,10 @@
 
     <div class="bottom">
       <div class="left">
-        <v-btn class="lock" text >임시보관</v-btn>
+        <v-btn class="lock" text @click.stop="()=>{}">임시보관</v-btn>
         <v-btn text @click.stop="$refs.gateInfoList.show(true)">출입정보</v-btn>
         <v-btn text @click.stop="$refs.copysnack.show(true)">주소복사</v-btn>
+        <v-btn text @click.stop="()=>{}">네비안내</v-btn>
       </div>
   
       <v-btn text class="finish">

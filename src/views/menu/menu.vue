@@ -19,7 +19,7 @@
           <v-icon>mdi-home</v-icon>
           <span>준비중입니다</span>
         </div>
-        <div class="btn" v-ripple>
+        <div class="btn" v-ripple @click="$router.push('login')">
           <v-icon>mdi-logout</v-icon>
           <span>로그아웃</span>
         </div>

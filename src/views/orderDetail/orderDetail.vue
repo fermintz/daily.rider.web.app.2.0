@@ -40,7 +40,7 @@
         <span>임시보관</span>
       </v-btn>
       <v-btn text @click="$refs.gateInfoList.show(true)">출입정보</v-btn>
-      <v-btn text @click="$refs.userPostMessage.show(true)">수거지연안내</v-btn>
+      <v-btn text @click="$refs.delayGuide.show(true)">수거지연안내</v-btn>
       <v-btn text @click="$refs.confrim.show(true)">패널티취소</v-btn>
     </div>
 
@@ -185,14 +185,15 @@
     <ImageViewer ref="imageViewer" />
     <Confirm
       ref="confrim"
-      title="검수상태 되돌리기"
-      message="검수단계 이후 진행된 사항의 모든 데이터가 손실됩니다 진행하시겠습니까?"
+      title="패널티취소"
+      message="패널티 취소를 진행하시겠습니까?"
     />
     <Snackbar ref="copysnack" text="주소를 복사하였습니다." />
     <Snackbar ref="memosave" text="메모를 저장하였습니다." />
     <PictureInModal ref="endPickup" />
     <GateInfoList ref="gateInfoList" />
     <Loading />
+    <DelayGuide ref="delayGuide"/> 
   </div>
 </template>
 
@@ -205,6 +206,7 @@ import Snackbar from "@/components/snackbar/snackbar.vue";
 import PictureInModal from "@/components/pictureInModal/pictureInModal.vue";
 import GateInfoList from "@/components/gateInfoList/gateInfoList.vue";
 import Loading from "@/components/loading/loading.vue";
+import DelayGuide from '@/components/delayGuide/delayGuide.vue';
 
 @Component({
   components: {
@@ -215,6 +217,7 @@ import Loading from "@/components/loading/loading.vue";
     PictureInModal,
     GateInfoList,
     Loading,
+    DelayGuide
   },
 })
 export default class orderDetail extends Vue {

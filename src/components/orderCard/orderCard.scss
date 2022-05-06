@@ -15,12 +15,12 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 11px;
+      font-size: 10px;
       height: 22px;
       background: $blue;
       color: #fff;
       padding: 0 5px;
-      border-radius: 5px;
+      border-radius: 3px;
     }
 
     .right {
@@ -77,19 +77,21 @@
         font-size:12px;
         margin-right:5px;
       }
-      .row{
+      .user{
         display:flex;
         align-items: center;
+
+        .name{
+          font-weight:bold;
+          font-size:15px;
+        }
+        .phone{
+          color:$green;
+          margin-left:5px;
+        }
       }
 
-      .name{
-        font-weight:bold;
-        font-size:15px;
-      }
-      .phone{
-        color:$green;
-        margin-left:5px;
-      }
+      
       .address{
         color:#898989;
       }
@@ -131,11 +133,12 @@
       }
 
       .v-btn{
-        font-size:11px;
+        font-size:10px;
         background:#fff;
         border:1px solid #292929;
         padding:0 5px;
-        max-height:24px;
+        min-width:unset;
+        max-height:22px;
         border-radius:3px;
         font-weight:normal;
       }
