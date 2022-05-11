@@ -18,16 +18,15 @@
 
     .inBox{
       display:flex;
-      align-items: center;
-      background:#fff;
-      border-radius:8px;
-      height:50px;
-      padding:0 10px;
-      box-shadow: 3px 3px 10px rgba(0,0,0,0.05);
-      border:1px solid #c2c2c2;
 
       .v-btn{
+        width:45px;
+        height:45px;
         margin-right:5px;
+        background:#292929;
+        .v-icon{
+          color:#fff;
+        }
       }
     }
   }

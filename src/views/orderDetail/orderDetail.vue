@@ -6,8 +6,6 @@
           <v-btn icon @click="$router.back(-1)">
             <v-icon> mdi-arrow-left </v-icon>
           </v-btn>
-
-          <h2>상세정보</h2>
         </div>
       </div>
 

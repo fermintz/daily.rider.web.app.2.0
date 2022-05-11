@@ -5,40 +5,44 @@
     <KakaoMap ref="map" height="100vh" />
 
     <div class="map-top-btns">
-      <v-btn
-        text
-        v-for="(item, index) in orderState"
-        :key="index"
-        :class="{ active: stateActive === index }"
-        @click="stateActive = index"
-      >
-        <label>{{ item.name }}</label>
-        <span>{{ item.number }}</span>
-      </v-btn>
-    </div>
-    
-    <div class="map-bottom-btns">
       <div class="left">
-        <v-btn text @click.stop="()=>{}">배송지연알림</v-btn>
+        <v-btn
+          text
+          v-for="(item, index) in orderState"
+          :key="index"
+          :class="{ active: stateActive === index }"
+          @click="stateActive = index"
+        >
+          <label>{{ item.name }}</label>
+          <span>{{ item.number }}</span>
+        </v-btn>
       </div>
       <div class="right">
-        <v-btn
-          icon
-          class="mylocation"
+        <v-btn icon>
+          <v-icon>
+            mdi-check-all
+          </v-icon>
+        </v-btn>
+        <v-btn 
+          icon 
           @click="() => $refs.map.moveCameraNowPosition()"
         >
           <v-icon>mdi-crosshairs-gps</v-icon>
         </v-btn>
       </div>
+      
     </div>
-
+    
     <div class="order-area" v-show="orderCardShow">
       <div class="top">
         <span></span>
       </div>
+      <div class="list-head">
+        <h4><b>3</b>개 선택됨</h4>
+        <v-btn text>배송지연알림</v-btn>
+      </div>
       <div class="list">
-        <OrderCard v-for="item in 5" :key="item"/>
-        
+        <OrderCard v-for="item in 3" :key="item"/>
       </div>
     </div>
   </div>
