@@ -3,8 +3,6 @@
 
     <Header />
 
-    
-
     <div class="inner">
       <div class="user-info">
         <dl>
@@ -30,7 +28,6 @@
         </div>
       </div>
     </div>
-    
   </div>
 </template>
 

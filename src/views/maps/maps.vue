@@ -18,11 +18,6 @@
         </v-btn>
       </div>
       <div class="right">
-        <v-btn icon>
-          <v-icon>
-            mdi-check-all
-          </v-icon>
-        </v-btn>
         <v-btn 
           icon 
           @click="() => $refs.map.moveCameraNowPosition()"
@@ -77,6 +72,7 @@ export default class extends Vue {
       name: "배송",
       number: 17,
     },
+    
   ];
 
   mounted(){
