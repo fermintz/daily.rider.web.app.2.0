@@ -31,6 +31,7 @@
       <div class="right">
         <span>이불포함</span>
         <span>신발포함</span>
+        <span>상품 8개</span>
       </div>
     </div> <!-- middle -->
 
@@ -45,8 +46,11 @@
       <v-btn text class="finish">
         수거완료
       </v-btn>
-  
     </div> <!-- bottom -->
+
+    <div class="message">
+      안전한 배송 부탁드립니다.
+    </div>
 
     <Snackbar ref="copysnack" text="주소를 복사하였습니다."/>
     <GateInfoList ref="gateInfoList"/>
